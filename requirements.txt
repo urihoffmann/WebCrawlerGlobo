@@ -3,3 +3,5 @@ requests
 lxml
 json
 flask
+flask-testing
+unittest
