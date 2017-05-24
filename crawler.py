@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
-import simplejson as json
+import json
+
 class Crawler:
 
     def getContent(self, url):
