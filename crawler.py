@@ -29,7 +29,8 @@ class Crawler:
     def parseDescritionDivUl(self, div):
         content = []
         for li in div.ul.findAll('li'):
-            content.append(li.a['href'])
+            if li.a:
+                content.append(li.a['href'])
         return {
             'type': 'links',
             'content': content

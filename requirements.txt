@@ -1,7 +1,5 @@
 beautifulsoup4>=4.6.0
 requests
 lxml
-json
 flask
 flask-testing
-unittest
