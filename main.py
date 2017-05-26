@@ -20,8 +20,6 @@ def api_auth():
 
     crawler = Crawler()
     content = crawler.getContent("http://revistaautoesporte.globo.com/rss/ultimas/feed.xml")
-    # content = open('test.xml').read()
-    # content = BeautifulSoup(content, "lxml-xml")
     parsedContent = make_response(crawler.parseContent(content), 200)
     return parsedContent
 
